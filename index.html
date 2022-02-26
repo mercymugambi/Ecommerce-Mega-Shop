@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <!-- These are meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Merc-tech mega shop for html, css, bootstrap, javascript and php">
+    <meta name="keywords" content="e-commerce system, online mega shop, mega shop, merc-tech">
+    <meta name="author" content="Mercy Mugambi">
+
+    <!-- Main css linked here-->
+    <link rel="stylesheet" href="CSS/main.css">
+
+    <!-- Font awesome link for icons version 4.7.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS version 4.6.1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    
+    <!-- This is the title -->
+    <title>MERC-TECH MEGA SHOP</title>
+
+</head>
+<body>
+    <!-- Top navbar with blink and account, cart begins here -->
+    <div id="page">
+        <div class="wrapper">
+            <div class="top_nav">
+                <div class="left">
+                  <p id="blink"> 50% Products Offer available on <b>15<sup>th</sup>March 2022 </b></p>
+                </div>
+                <div class="right">
+                  <!-- Dropdown Menu starts here -->
+                  <div class="nav-item dropdown">
+                    <a 
+
+                        class="nav-link"
+                        href ="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"><i class="fa fa-fw fa-user"></i>
+                        Account
+                        <span class="fa fa-angle-down"></span>                              
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Login</a>
+                        <a class="dropdown-item" href="#">Register</a>
+                    </div>
+                    </div>
+                    <!--Drop Down items ends here -->
+                </div>
+            </div>
+            <!-- End of top nav -->
+
+            <!-- Start of bottom Nav -->
+            <div class="bottom_nav">
+                <img id="logo" src="/images/logo/logo1.png" style="width: 80px; height: 50px;">
+                <ul class="standard-nav visible-lg">
+                    <li><a id="contact-linker" class="scroll" href="#"><i class="fa fa-address-card-o" aria-hidden="true"></i></i>ContactUs</a></li>
+                    <li><a id="cart-linker" class="scroll" href="#">Cart<i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <!-- End of bottom nav -->
+        </div> 
+        <!-- End of nav wrapping -->
+        <div class="container-fluid dark-nav">
+            <div class="row">
+                <!--- col code for sidebar nav -->
+                <div class="col-2">
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <p style="align-items: center; font-size: 14px; margin-bottom: 1px; color: #32CD32;">Categories</p>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-vegetables" aria-selected="false">Vegetables</a>
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Fruits</a>
+                    
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Dairy Produce</a>
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Bakery</a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Beverages</a>
+                  </div>
+                  <hr>
+                  
+                </div>
+                <!-- Start of Sliders -->
+                <div class="col-7">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="/images/slider/blended.PNG" class="d-block w-100" height="255px" width="960px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/images/slider/grocerydelivers.PNG" class="d-block w-100" height="255px" width="960px"  alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/images/slider/fruitveges.png" class="d-block w-100" height="255px" width="960px" alt="...">
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <!-- Start of grid at right side -->
+                <div class="col-3">
+                    <div class="grid-container">
+                        <div class="item1"><img src="/images/services/fruits.PNG" class="d-block w-100" alt="..."></div>
+                        <hr>
+                        <div class="item2"><img src="/images/services/bouquet.PNG" class="d-block w-100" alt="..."></div>
+                        <hr>
+                        
+                    </div>
+                </div>
+                <!-- end of grid -->
+              </div>
+            
+        </div>
+            
+    </div>
+    
+    
+    
+    <!-- Blinking javascript code -->
+    <script type="text/javascript">
+        var blink = document.getElementById('blink');
+        setInterval(function() {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 1000);
+    </script>
+
+    
+    
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" ></script>
+
+</body>
+</html>

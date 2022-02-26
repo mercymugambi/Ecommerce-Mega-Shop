@@ -1,0 +1,187 @@
+/*TABLE OF CONTENTS
+1. Background image
+2. suspended page section
+3. Top navbar
+4. 
+
+*/
+
+/*background image applied to the body*/
+body {
+    background-color: #f4f0ec;
+    /*background-image: url("/images/bg/body-bg.jpg");
+     Full height */
+    height: 1000%;
+    width: 100%;
+    /* Centers and scales the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   /*suspended page created with margins*/
+   #page{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #f4f0ec;
+   }
+   /*wrapper for both top and bottom navbar*/
+
+   .wrapper{
+    float:left;
+    width:100%;
+    position: relative;
+   }
+   /*top navbar starts here*/
+
+   .wrapper .top_nav{
+    margin-top: 0px;
+    width: 100%;
+    height: 20px;
+    background: #32CD32;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .wrapper .top_nav .left{
+    display: flex;
+    align-items: center;
+  }
+  /*Blinking text applied to navbar*/
+  .wrapper .top_nav .left #blink{
+      font-size: 15px;
+      font-weight: bold;
+      color: 	#FF0000;
+      transition: 0.5s;
+  }
+  
+  .wrapper .top_nav .right{
+    display: flex;
+  }
+  
+  .wrapper .top_nav .right a{
+    margin: 0px 12px;
+    align-items: center;
+    font-size: 10px;
+    color: #ffffff;
+    margin-bottom: 12px;
+  }
+/*linking of account dropdown menu css*/
+.wrapper .nav-item .navlink{
+  color: black;
+}
+.wrapper .nav-item .navlink:hover{
+  color: black;
+}
+.wrapper .dropdown-menu{
+  margin-top: 5px;
+  background: #212222;
+  height: auto;
+}
+.wrapper .dropdown span{
+  font-size: 10px;
+  margin-left: 3px;
+}
+.wrapper .dropdown .dropdown-menu a{
+  font-size: 12px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.wrapper .dropdown .dropdown-menu a:hover{
+  background: #32CD32;
+  width: 60%;
+}
+
+/*Bottom nav Starts here*/
+.wrapper .bottom_nav{
+  background-color: #ffffff;
+  align-items: center;
+  float: left;
+  width: 100%;
+  position: relative;
+  padding: 0 15px;
+}
+
+/* Stardand nav to create vertical bar on bottom navbar */
+.standard-nav{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  float: right;
+}
+.standard-nav li{
+  border-right: 2px solid #32CD32;
+  display: inline-block;
+  padding: 0 15px;
+  margin-bottom: 10px;
+}
+.standard-nav li:last-child {
+  border-right:0;
+} 
+.standard-nav li > a{
+  color: black;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 15px;
+  letter-spacing: 0.15em;
+  line-height:19px;
+}
+
+/* col sections for side nav, slider and right col*/
+.dark-nav {
+  background-color: #f4f0ec;
+  height: 100vh;
+  width: 100%;
+}
+
+.dark-nav .row{
+  margin-left: 2px;
+}
+.col-2{
+  background-color: #ffffff;
+  margin-top: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 12px;
+}
+.col-2 .nav-link{
+  color: #838996;
+}
+.col-2 .nav-link :hover{
+  color: #838996;
+}
+.col-7{
+  margin-top: 5px;
+}
+.col-3{
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+.col-3 .item1{
+  margin-top: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+  
+  
+  
+
+   
+   
