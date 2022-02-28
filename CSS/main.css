@@ -8,9 +8,9 @@
 
 /*background image applied to the body*/
 body {
-    background-color: #f4f0ec;
-    /*background-image: url("/images/bg/body-bg.jpg");
-     Full height */
+    /*background-color: #f4f0ec;*/
+    background-image: url("/images/bg/body-bg.jpg");
+     /*Full height */
     height: 1000%;
     width: 100%;
     /* Centers and scales the image nicely */
@@ -135,7 +135,6 @@ body {
 /* col sections for side nav, slider and right col*/
 .dark-nav {
   background-color: #f4f0ec;
-  height: 100vh;
   width: 100%;
 }
 
@@ -145,6 +144,7 @@ body {
 .col-2{
   background-color: #ffffff;
   margin-top: 5px;
+  margin-bottom: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 12px;
 }
@@ -164,6 +164,24 @@ body {
 .col-3 .item1{
   margin-top: 1px;
 }
+
+/*testimonials starts here */
+.col-sm-2 #carousel-inner .carousel-item .colon {
+  margin: 30px 0 20px 0;
+}
+.col-sm-2 #carousel-inner .carousel-item .team {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  padding: 1px; 
+  margin-bottom: 5px;
+}
+.section .row{
+  margin-left: 2px;
+}
+
+
+
 
 
 
