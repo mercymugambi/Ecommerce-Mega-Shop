@@ -59,7 +59,7 @@
 
             <!-- Start of bottom Nav -->
             <div class="bottom_nav">
-                <img id="logo" src="/images/logo/logo1.png" style="width: 80px; height: 50px;">
+                <?php echo '<img id="logo" src="/images/logo/logo1.png" style="width: 80px; height: 50px;">';?>
                 <ul class="standard-nav visible-lg">
                     <li><a id="contact-linker" class="scroll" href="#"><i class="fa fa-address-card-o" aria-hidden="true"></i></i>ContactUs</a></li>
                     <li><a id="cart-linker" class="scroll" href="#">Cart<i class="fa fa-shopping-cart" aria-hidden="true"></i></a><sup><span class="badge badge-light" style="color:red">0</span></sup></li>
@@ -71,18 +71,16 @@
         <div class="container-fluid dark-nav">
             <div class="row">
                 <!--- col code for sidebar nav -->
-                <div class="col-2">
-                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <p style="align-items: center; font-size: 14px; margin-bottom: 1px; color: #32CD32;">Categories</p>
-                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-vegetables" aria-selected="false">Vegetables</a>
-                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Fruits</a>
-                    
-                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Dairy Produce</a>
-                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Bakery</a>
-                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Beverages</a>
-                  
+                <div class="col-2" style="height: 60%;">
+                    <div class="sidebar" id="categories">
+                        <br>
+                        <h5 style="font-size: 1;">Categories</h5>
+                        <a class="active" href="#">vegetables</a><br><br>
+                        <a href="#Fruits">Fruits</a><br><br>
+                        <a href="#Dairy Produce">Dairy Produce</a><br><br>
+                        <a href="#bakery">Bakery</a><br><br>
+                        <a href="#beverages">Beverages</a><br><br><br><br><br>
                     </div>
-                    <hr>
                 </div>
                 <!-- Start of Sliders center grid -->
                 <div class="col-7">
@@ -337,6 +335,7 @@
             </div>
         </div>
     </div>
+    <?php ?>
     
     <!-- Blinking javascript code -->
     <script type="text/javascript">
