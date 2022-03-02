@@ -10,7 +10,7 @@
     <meta name="author" content="Mercy Mugambi">
 
     <!-- Custom css linked here-->
-    <link rel="stylesheet" href="CSS/main.css">
+    <style> <?php include 'CSS/main.css'; ?></style>
 
     <!-- Font awesome link for icons version 4.7.0 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -48,8 +48,8 @@
                         <span class="fa fa-angle-down"></span>                              
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Login</a>
-                        <a class="dropdown-item" href="#">Register</a>
+                        <a class="dropdown-item" href="login.php">Login</a>
+                        <a class="dropdown-item" href="register.php">Register</a>
                     </div>
                     </div>
                     <!--Drop Down items ends here -->
@@ -58,24 +58,24 @@
             <!-- End of top nav -->
 
             <!-- Start of bottom Nav -->
-            <div class="bottom_nav">
-                <?php echo '<img id="logo" src="/images/logo/logo1.png" style="width: 80px; height: 50px;">';?>
+            <div class="bottom_nav" >
+                <img id="logo" src="images/logo/logo1.png" style="width: 80px; height: 50px;">
                 <ul class="standard-nav visible-lg">
                     <li><a id="contact-linker" class="scroll" href="#"><i class="fa fa-address-card-o" aria-hidden="true"></i></i>ContactUs</a></li>
                     <li><a id="cart-linker" class="scroll" href="#">Cart<i class="fa fa-shopping-cart" aria-hidden="true"></i></a><sup><span class="badge badge-light" style="color:red">0</span></sup></li>
                 </ul>
             </div>
             <!-- End of bottom nav -->
-        </div> 
+        </div>
         <!-- End of nav wrapping -->
         <div class="container-fluid dark-nav">
             <div class="row">
                 <!--- col code for sidebar nav -->
-                <div class="col-2" style="height: 60%;">
-                    <div class="sidebar" id="categories">
+                <div class="col-2" style="height: 100%;">
+                    <div class="categories">
                         <br>
-                        <h5 style="font-size: 1;">Categories</h5>
-                        <a class="active" href="#">vegetables</a><br><br>
+                        <h5><u>Categories</u></h5>
+                        <a class ="active" href="#" style="font-size: 20px; color; green">Vegetables</a><br><br>
                         <a href="#Fruits">Fruits</a><br><br>
                         <a href="#Dairy Produce">Dairy Produce</a><br><br>
                         <a href="#bakery">Bakery</a><br><br>
@@ -87,13 +87,13 @@
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                              <img src="/images/slider/blended.PNG" class="d-block w-100" height="255px" width="960px" alt="...">
+                              <img src="images/slider/blended.PNG" class="d-block w-100" height="500px" width="960px" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="/images/slider/grocerydelivers.PNG" class="d-block w-100" height="255px" width="960px"  alt="...">
+                            <img src="images/slider/grocerydelivers.PNG" class="d-block w-100" height="500px" width="960px"  alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="/images/slider/fruitveges.png" class="d-block w-100" height="255px" width="960px" alt="...">
+                            <img src="images/slider/fruitveges.png" class="d-block w-100" height="500px" width="960px" alt="...">
                           </div>
                         </div>
                     </div>
@@ -101,9 +101,9 @@
                 <!-- Start of grid at right side -->
                 <div class="col-3">
                     <div class="grid-container">
-                        <div class="item1"><img src="/images/services/fruits.PNG" class="d-block w-100" alt="..."></div>
+                        <div class="item1"><img src="images/services/fruits.PNG" class="d-block w-100" alt="..."></div>
                         <hr>
-                        <div class="item2"><img src="/images/services/bouquet.PNG" class="d-block w-100" alt="..."></div>
+                        <div class="item2"><img src="images/services/bouquet.PNG" class="d-block w-100" alt="..."></div>
                         <hr>
                         
                     </div>
@@ -122,19 +122,19 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="/images/testmonials/user3.jpg" class="centerblock team" alt="...">
+                                <img src="images/testmonials/user3.jpg" class="centerblock team" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h2 style="color: green; font-size: small;"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h2>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="/images/testmonials/user3.jpg" class="centerblock team" alt="...">
+                                <img src="images/testmonials/user3.jpg" class="centerblock team" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h2 style="color: green; font-size: small;"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h2>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="/images/testmonials/user3.jpg" class="centerblock team" alt="...">
+                                <img src="images/testmonials/user3.jpg" class="centerblock team" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h2 style="color: green; font-size: small;"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h2>
                             
@@ -168,32 +168,32 @@
                                 <div class="row">
                                     <div class="col-md-2">
                                         <div class="card mb-0">
-                                            <img class="card-img-top" src="/images/slider/cupcake.jpg" alt="Card image cap">
+                                            <img class="card-img-top" src="images/slider/cupcake.jpg" alt="Card image cap">
                                         </div>
                                     </div>
                                     <div class="col-md-2 clearfix d-none d-md-block">
                                         <div class="card mb-0">
-                                            <img class="card-img-top" src="/images/slider/dailydrinks.jpg" alt="Card image cap">
+                                            <img class="card-img-top" src="images/slider/dailydrinks.jpg" alt="Card image cap">
                                         </div>
                                     </div>
                                     <div class="col-md-2 clearfix d-none d-md-block">
                                         <div class="card mb-0">
-                                            <img class="card-img-top" src="/images/slider/fastfood.jpg" alt="Card image cap">
+                                            <img class="card-img-top" src="images/slider/fastfood.jpg" alt="Card image cap">
                                         </div>
                                     </div>
                                     <div class="col-md-2 clearfix d-none d-md-block">
                                         <div class="card mb-0">
-                                            <img class="card-img-top" src="/images/slider/jarspices.jpg" alt="Card image cap">
+                                            <img class="card-img-top" src="images/slider/jarspices.jpg" alt="Card image cap">
                                         </div>
                                     </div>
                                     <div class="col-md-2 clearfix d-none d-md-block">
                                         <div class="card mb-0">
-                                            <img class="card-img-top" src="/images/slider/dailydrinks.jpg" alt="Card image cap">
+                                            <img class="card-img-top" src="images/slider/dailydrinks.jpg" alt="Card image cap">
                                         </div>
                                     </div>
                                     <div class="col-md-2 clearfix d-none d-md-block">
                                         <div class="card mb-0">
-                                            <img class="card-img-top" src="/images/slider/icecream.jpg" alt="Card image cap">
+                                            <img class="card-img-top" src="images/slider/icecream.jpg" alt="Card image cap">
                                         </div>
                                     </div>
                                 </div>
@@ -202,34 +202,34 @@
                             <!--First slide-->
                             <div class="carousel-item">
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-md-2" >
                                         <div class="card mb-0">
-                                            <img class="card-img-top" src="/images/slider/jarspices.jpg" alt="Card image cap">
+                                            <img class="card-img-top" src="images/slider/jarspices.jpg" alt="Card image cap">
                                         </div>
                                     </div>
                                     <div class="col-md-2 clearfix d-none d-md-block">
                                         <div class="card mb-0">
-                                            <img class="card-img-top" src="/images/slider/juice.jpg" alt="Card image cap">
+                                            <img class="card-img-top" src="images/slider/juice.jpg" alt="Card image cap">
                                         </div>
                                     </div>
                                     <div class="col-md-2 clearfix d-none d-md-block">
                                         <div class="card mb-0">
-                                            <img class="card-img-top" src="/images/slider/icecream.jpg" alt="Card image cap">
+                                            <img class="card-img-top" src="images/slider/icecream.jpg" alt="Card image cap">
                                         </div>
                                     </div>
                                     <div class="col-md-2 clearfix d-none d-md-block">
                                         <div class="card mb-0">
-                                            <img class="card-img-top" src="/images/slider/fastfood.jpg" alt="Card image cap">
+                                            <img class="card-img-top" src="images/slider/fastfood.jpg" alt="Card image cap">
                                         </div>
                                     </div>
                                     <div class="col-md-2 clearfix d-none d-md-block">
                                         <div class="card mb-0">
-                                            <img class="card-img-top" src="/images/slider/icecream.jpg" alt="Card image cap">
+                                            <img class="card-img-top" src="images/slider/icecream.jpg" alt="Card image cap">
                                         </div>
                                     </div>
                                     <div class="col-md-2 clearfix d-none d-md-block">
                                         <div class="card mb-0">
-                                            <img class="card-img-top" src="/images/slider/dailydrinks.jpg" alt="Card image cap">
+                                            <img class="card-img-top" src="images/slider/dailydrinks.jpg" alt="Card image cap">
                                         </div>
                                     </div>
                                 </div>
@@ -241,16 +241,24 @@
                     <!--/.Carousel Wrapper-->
                 </div>
             </div>
-            <!-- Products nav bar-->
+
+            <!-- Products navbar-->
             <div class="section">
                 <div class="row" >
-                    <div class="col-2" style="height: 60%;">
+                    <div class="col-2" >
+                        <!-- Sidebar banner -->
+                        <div class="banner">
+                        <img src="images/banners/banner1.png" alt="banner" ;>            
+                        </div>
+                        <hr>
+                        <!--Featured products -->
                         <div class="sidebar" id="featured">
                             <a class="active" href="#home">Home</a><br>
                             <a href="#news">News</a>
                             <a href="#contact">Contact</a>
                             <a href="#about">About</a>
                         </div>
+                        
                     </div>
                     <div class="col-10">
                     <div class="border-bottom py-3">
@@ -258,16 +266,9 @@
                           <div class="row align-items-center justify-content-between">
                             <div class="col-md-9 col-lg-10">
                               <ul class="nav nav-underline border-0 justify-content-between justify-content-md-start">
-                                <li class="nav-item mr-md-4"><a data-toggle="tab" class="text-graphite active" href="#vegetables" aria-selected="true">Vegetables</a>
+                                <li class="nav-item mr-md-4"><a data-toggle="tab" class="text-graphite active" href="#" aria-selected="true">Featured</a>
                                 </li>
-                                <li class="nav-item mr-md-4"><a data-toggle="tab" class="text-graphite" href="#fruits" aria-selected="false">Fruits</a>
-                                </li>
-                                <li class="nav-item mr-md-4"><a data-toggle="tab" class="text-graphite" href="#dairy-produce" aria-selected="false">Dairy</a>
-                                </li>
-                                <li class="nav-item mr-md-4"><a data-toggle="tab" class="text-graphite" href="#bakery" aria-selected="false">Bakery</a>
-                                </li>
-                                <li class="nav-item mr-md-4"><a data-toggle="tab" class="text-graphite" href="#beverages" aria-selected="false">Beverages</a>
-                                </li>
+                                <li class="nav-item mr-md-4"><a data-toggle="tab" class="text-graphite" href="#fruits" aria-selected="false">Latest</a>
                               </ul>
                             </div>
                           </div>
@@ -334,9 +335,46 @@
                 </div>
             </div>
         </div>
+        <!-- Footer begins here -->
+        <footer class="footer-distributed">
+            <div class="footer-left">
+                <h3>MercTech<span>MegaShop</span></h3>
+                <p class="footer-links">
+                    <a href="index.php" class="link-1">Home</a>
+                    <a href="#">Categories</a>
+                    <a href="#">Cart</a>
+                </p><br>
+                <p style="color: white;";><i>MercTech MegaShop Copyright &copy; <script>document.write(new Date().getFullYear())</script> All Rights Reserved</i></p>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>P.O Box Private bag</span> 00217, Nairobi</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+254723460025</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:info@megashop.com">info@megashop.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>ABOUT US</span>
+                    Merc-tech mega shop provides variety of products ata affordable price. Pay is on delivery.
+                    </p>
+                <div class="footer-icons">
+                    <a href="https://web.facebook.com/franny.makena"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/mercy-m-a8a470127/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/mercymugambi"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+        </footer>
     </div>
-    <?php ?>
-    
+
     <!-- Blinking javascript code -->
     <script type="text/javascript">
         var blink = document.getElementById('blink');
